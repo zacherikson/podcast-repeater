@@ -1,0 +1,27 @@
+{
+  "Comment": "Distribution for zacherikson329.click",
+  "Origins": [
+    {
+      "DomainName": "zacherikson329.click.s3.amazonaws.com",
+      "Id": "S3Origin",
+      "S3OriginConfig": {
+        "OriginAccessIdentity": ""
+      }
+    }
+  ],
+  "DefaultRootObject": "index.html",
+  "Enabled": true,
+  "DefaultCacheBehavior": {
+    "TargetOriginId": "S3Origin",
+    "ViewerProtocolPolicy": "redirect-to-https",
+    "AllowedMethods": ["GET", "HEAD"],
+    "CachedMethods": ["GET", "HEAD"],
+    "ForwardedValues": {
+      "QueryString": false,
+      "Cookies": {
+        "Forward": "none"
+      }
+    },
+    "MinTTL": 0
+  }
+}
