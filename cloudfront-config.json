@@ -1,8 +1,8 @@
 {
-  "Comment": "Distribution for zacherikson329.click",
+  "Comment": "Distribution for podcast-repeater",
   "Origins": [
     {
-      "DomainName": "zacherikson329.click.s3.amazonaws.com",
+      "DomainName": "podcast-repeater.s3.amazonaws.com",
       "Id": "S3Origin",
       "S3OriginConfig": {
         "OriginAccessIdentity": ""
