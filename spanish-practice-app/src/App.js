@@ -20,13 +20,13 @@ function App() {
     let token = window.localStorage.getItem("token");
 
     if (!token && hash) {
-      token = hash
-        .substring(1)
-        .split("&")
-        .find((elem) => elem.startsWith("access_token"))
-        .split("=")[1];
-      window.location.hash = "";
-      window.localStorage.setItem("token", token);
+      const params = new URLSearchParams(hash.substring(1));
+      token = params.get("access_token");
+
+      if (token) {
+        window.location.hash = "";
+        window.localStorage.setItem("token", token);
+      }
     }
 
     setToken(token);
