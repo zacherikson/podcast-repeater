@@ -2,9 +2,8 @@
   "name": "spanish-practice-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://zacherikson.github.io/spanish-practice-app",
+  "homepage": "https://zacherikson.github.io/Podcast-Repeat/spanish-practice-app",
   "dependencies": {
-    "@spotify/web-playback-sdk-types": "^0.1.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
